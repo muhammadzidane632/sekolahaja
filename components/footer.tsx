@@ -10,6 +10,7 @@
 
 import { GraduationCap, MapPin, Phone, Mail, Facebook, Instagram, Youtube } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -18,9 +19,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* School Info */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="bg-white/10 p-2 rounded-lg">
-                <GraduationCap className="h-8 w-8" />
+            <div className="flex items-center gap-3">
+              <div className="relative w-16 h-16 bg-white/10 p-2 rounded-lg">
+                <Image
+                  src="https://smkn6solo.sch.id/wp-content/uploads/2022/06/cropped-cropped-logosmk6-2.png"
+                  alt="Logo SMKN 6 Surakarta"
+                  fill
+                  className="object-contain"
+                />
               </div>
               <div>
                 <h3 className="font-bold text-xl">SMKN 6 Surakarta</h3>

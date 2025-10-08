@@ -9,6 +9,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Menu, X, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -32,8 +33,14 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-20">
           {/* Logo and School Name */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="bg-gradient-to-br from-primary to-primary/80 p-2.5 rounded-xl group-hover:scale-105 transition-transform shadow-lg">
-              <GraduationCap className="h-7 w-7 text-primary-foreground" />
+            <div className="relative w-12 h-12 group-hover:scale-105 transition-transform">
+              <Image
+                src="https://smkn6solo.sch.id/wp-content/uploads/2022/06/cropped-cropped-logosmk6-2.png"
+                alt="Logo SMKN 6 Surakarta"
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
             <div className="hidden sm:block">
               <div className="font-bold text-xl text-primary leading-tight">SMKN 6</div>
@@ -66,8 +73,13 @@ export default function Navigation() {
               <SheetContent side="right" className="w-[300px]">
                 <div className="flex flex-col gap-4 mt-8">
                   <div className="flex items-center gap-2 pb-4 border-b">
-                    <div className="bg-primary p-2 rounded-lg">
-                      <GraduationCap className="h-6 w-6 text-primary-foreground" />
+                    <div className="relative w-12 h-12">
+                      <Image
+                        src="https://smkn6solo.sch.id/wp-content/uploads/2022/06/cropped-cropped-logosmk6-2.png"
+                        alt="Logo SMKN 6 Surakarta"
+                        fill
+                        className="object-contain"
+                      />
                     </div>
                     <div>
                       <div className="font-bold text-lg text-primary">SMKN 6 Surakarta</div>
