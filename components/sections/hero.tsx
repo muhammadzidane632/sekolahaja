@@ -104,7 +104,7 @@ export default function HeroSection() {
                     <BookOpen className="h-6 w-6 text-white" />
                   </div>
                 </div>
-                <p className="text-3xl font-bold text-white mb-1">6+</p>
+                <p className="text-3xl font-bold text-white mb-1">7</p>
                 <p className="text-sm text-white/80 font-medium">Jurusan</p>
               </div>
               <div>
